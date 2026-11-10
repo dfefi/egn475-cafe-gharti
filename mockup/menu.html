@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Cafe Gharti</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+  <header class="container">
+    <nav aria-label="Primary navigation">
+      <ul><li><strong>Cafe Gharti</strong></li></ul>
+      <ul>
+        <li><a href="menu.html" aria-current="page">Menu</a></li>
+        <li><a href="order.html">Your order</a></li>
+        <li><a href="status.html">Order status</a></li>
+        <li><a href="kitchen.html">Staff board</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <header>
+      <h1>Good morning, Maya</h1>
+      <p>Choose your coffee and breakfast. Sold-out items cannot be added.</p>
+    </header>
+
+    <nav aria-label="Menu categories">
+      <ul>
+        <li><a href="#hot-drinks">Hot drinks</a></li>
+        <li><a href="#bakery">Bakery</a></li>
+        <li><a href="#breakfast">Breakfast</a></li>
+      </ul>
+    </nav>
+
+    <section id="hot-drinks" aria-labelledby="hot-drinks-heading">
+      <h2 id="hot-drinks-heading">Hot drinks</h2>
+      <div class="grid">
+        <article>
+          <h3>Cafe con leche</h3>
+          <p>Espresso with steamed milk and a little sugar.</p>
+          <p><strong>$3.50</strong></p>
+          <a href="order.html#order-items" role="button">Add to order</a>
+        </article>
+        <article>
+          <h3>Guava iced tea</h3>
+          <p>Black tea poured over ice with guava and lime.</p>
+          <p><strong>$3.00</strong></p>
+          <a href="order.html#order-items" role="button">Add to order</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="bakery" aria-labelledby="bakery-heading">
+      <h2 id="bakery-heading">Bakery</h2>
+      <div class="grid">
+        <article>
+          <h3>Guava and cheese pastry</h3>
+          <p>Flaky pastry filled with guava paste and cream cheese.</p>
+          <p><strong>$4.25</strong></p>
+          <a href="order.html#order-items" role="button">Add to order</a>
+        </article>
+        <article aria-label="Sold-out item">
+          <h3>Ham croqueta <small>(sold out)</small></h3>
+          <p>Crisp ham croquettes with a creamy center.</p>
+          <p><strong>$2.75</strong></p>
+          <button disabled>Unavailable</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="breakfast" aria-labelledby="breakfast-heading">
+      <h2 id="breakfast-heading">Breakfast</h2>
+      <article>
+        <h3>Cuban toast breakfast</h3>
+        <p>Pressed Cuban toast, eggs, and seasonal fruit.</p>
+        <p><strong>$8.50</strong></p>
+        <a href="order.html#order-items" role="button">Add to order</a>
+      </article>
+    </section>
+
+    <footer>
+      <a href="order.html" role="button">View your order</a>
+    </footer>
+  </main>
+</body>
+</html>
