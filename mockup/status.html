@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order status | Cafe Gharti</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+  <header class="container">
+    <nav aria-label="Primary navigation">
+      <ul><li><strong>Cafe Gharti</strong></li></ul>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Your order</a></li>
+        <li><a href="status.html" aria-current="page">Order status</a></li>
+        <li><a href="kitchen.html">Staff board</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <header>
+      <h1>Check your order</h1>
+      <p>Enter the order number from your confirmation.</p>
+    </header>
+
+    <form action="status.html" method="get">
+      <label for="order-number">Order number</label>
+      <input id="order-number" name="order-number" type="text" placeholder="1042" required>
+      <button type="submit">Show status</button>
+    </form>
+
+    <article aria-labelledby="status-heading">
+      <header>
+        <h2 id="status-heading">Order #1042</h2>
+        <p><mark>Preparing</mark></p>
+      </header>
+      <p>Maya, your order is being prepared by the kitchen.</p>
+      <ol>
+        <li>Received</li>
+        <li><strong>Preparing</strong></li>
+        <li>Ready for pickup</li>
+        <li>Picked up</li>
+      </ol>
+      <footer>
+        <a href="menu.html" role="button" class="secondary">Back to menu</a>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
