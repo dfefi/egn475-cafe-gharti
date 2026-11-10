@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your order | Cafe Gharti</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+  <header class="container">
+    <nav aria-label="Primary navigation">
+      <ul><li><strong>Cafe Gharti</strong></li></ul>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html" aria-current="page">Your order</a></li>
+        <li><a href="status.html">Order status</a></li>
+        <li><a href="kitchen.html">Staff board</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <header>
+      <h1>Your order</h1>
+      <p>Review your items and tell us who to call when your order is ready.</p>
+    </header>
+
+    <form action="confirmation.html" method="get">
+      <section id="order-items" aria-labelledby="items-heading">
+        <h2 id="items-heading">Items</h2>
+        <label for="item">Menu item</label>
+        <select id="item" name="item">
+          <option>Cafe con leche — $3.50</option>
+          <option>Guava and cheese pastry — $4.25</option>
+          <option>Cuban toast breakfast — $8.50</option>
+        </select>
+
+        <label for="quantity">Quantity</label>
+        <input id="quantity" name="quantity" type="number" min="1" value="1" required>
+
+        <label for="notes">Special notes <small>(optional)</small></label>
+        <textarea id="notes" name="notes" rows="2" placeholder="For example: no sugar"></textarea>
+      </section>
+
+      <section aria-labelledby="customer-heading">
+        <h2 id="customer-heading">Customer details</h2>
+        <label for="customer-name">Name for the order</label>
+        <input id="customer-name" name="customer-name" type="text" placeholder="Maya" required>
+      </section>
+
+      <aside>
+        <h2>Order total</h2>
+        <p><strong>1 × Cafe con leche</strong> <span>$3.50</span></p>
+        <p><strong>Total: $3.50</strong></p>
+      </aside>
+
+      <button type="submit">Place order</button>
+      <a href="menu.html" role="button" class="secondary">Back to menu</a>
+    </form>
+  </main>
+</body>
+</html>
