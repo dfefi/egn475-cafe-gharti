@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu administration | Cafe Gharti</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+  <header class="container">
+    <nav aria-label="Staff navigation">
+      <ul><li><strong>Cafe Gharti kitchen</strong></li></ul>
+      <ul>
+        <li><a href="kitchen.html">Board</a></li>
+        <li><a href="history.html">Order history</a></li>
+        <li><a href="menu-admin.html" aria-current="page">Menu admin</a></li>
+        <li><a href="menu.html">Customer view</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <header>
+      <h1>Menu administration</h1>
+      <p>Add or update the items shown to customers. This is a static mockup;
+        changes are not saved.</p>
+    </header>
+
+    <section aria-labelledby="add-item-heading">
+      <h2 id="add-item-heading">Add a menu item</h2>
+      <form action="menu-admin.html" method="get">
+        <label for="item-name">Item name</label>
+        <input id="item-name" name="item-name" type="text" placeholder="Café con leche" required>
+        <label for="item-description">Description</label>
+        <textarea id="item-description" name="item-description" rows="2" required></textarea>
+        <label for="item-price">Price</label>
+        <input id="item-price" name="item-price" type="number" min="0.01" step="0.01" placeholder="3.50" required>
+        <label for="item-category">Category</label>
+        <select id="item-category" name="item-category">
+          <option>Hot drinks</option>
+          <option>Bakery</option>
+          <option>Breakfast</option>
+        </select>
+        <button type="submit">Add item</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="current-items-heading">
+      <h2 id="current-items-heading">Current items</h2>
+      <table>
+        <thead>
+          <tr><th scope="col">Item</th><th scope="col">Price</th><th scope="col">Availability</th><th scope="col">Action</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Cafe con leche</th><td>$3.50</td><td>Available</td><td><a href="menu-admin.html">Edit</a></td></tr>
+          <tr><th scope="row">Guava and cheese pastry</th><td>$4.25</td><td>Available</td><td><a href="menu-admin.html">Edit</a></td></tr>
+          <tr><th scope="row">Ham croqueta</th><td>$2.75</td><td>Sold out</td><td><a href="menu-admin.html">Edit</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
