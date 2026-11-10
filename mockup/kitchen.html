@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kitchen board | Cafe Gharti</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+  <header class="container">
+    <nav aria-label="Staff navigation">
+      <ul><li><strong>Cafe Gharti kitchen</strong></li></ul>
+      <ul>
+        <li><a href="kitchen.html" aria-current="page">Board</a></li>
+        <li><a href="history.html">Order history</a></li>
+        <li><a href="menu-admin.html">Menu admin</a></li>
+        <li><a href="menu.html">Customer view</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <header>
+      <h1>Kitchen board</h1>
+      <p>Tuesday, 10:18 AM · Luis is signed in as kitchen staff</p>
+    </header>
+
+    <div class="grid">
+      <section aria-labelledby="received-heading">
+        <h2 id="received-heading">Received <small>(1)</small></h2>
+        <article>
+          <header><strong>Order #1043</strong> · 10:17 AM</header>
+          <p><strong>Maya R.</strong></p>
+          <ul><li>1 × Cuban toast breakfast</li><li>1 × Cafe con leche</li></ul>
+          <a href="kitchen.html" role="button">Start preparing</a>
+        </article>
+      </section>
+
+      <section aria-labelledby="preparing-heading">
+        <h2 id="preparing-heading">Preparing <small>(1)</small></h2>
+        <article>
+          <header><strong>Order #1042</strong> · 10:12 AM</header>
+          <p><strong>Maya</strong></p>
+          <ul><li>1 × Cafe con leche</li><li>1 × Guava and cheese pastry</li></ul>
+          <a href="kitchen.html" role="button">Mark ready</a>
+        </article>
+      </section>
+
+      <section aria-labelledby="ready-heading">
+        <h2 id="ready-heading">Ready <small>(1)</small></h2>
+        <article>
+          <header><strong>Order #1041</strong> · 10:05 AM</header>
+          <p><strong>Jordan</strong></p>
+          <ul><li>2 × Guava iced tea</li></ul>
+          <a href="kitchen.html" role="button">Mark picked up</a>
+        </article>
+      </section>
+
+      <section aria-labelledby="picked-up-heading">
+        <h2 id="picked-up-heading">Picked up <small>(0)</small></h2>
+        <article>
+          <p>No current orders have been picked up.</p>
+        </article>
+      </section>
+    </div>
+
+    <footer>
+      <a href="history.html" role="button" class="secondary">View recent order history</a>
+    </footer>
+  </main>
+</body>
+</html>
